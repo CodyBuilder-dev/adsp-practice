@@ -1,54 +1,93 @@
 #===========ADsP 데이터 분석 과목================
 #========1장. R 기초와 데이터 마트==============
-
 #1. R 기초
-#1-1. R의 변수 
-# R 데이터(컨테이너) 타입 :
-#스칼라+벡터/Matrix/Array/DF/List
+#1-1. R의 데이터 타입
+#1-1-1. 통계학에서의 데이터 타입
+# 범주형 변수 : 명목형(Norminal)/순서형(Ordinal)
+# 수치형 변수 : 이산형(Discrete)/연속형(Continuous)
+#1-1-2. R에서의 데이터 타입
+#수치형-이산형 : integer type
+#수치형-연속형 : numeric type
+#범주형 변수 : factor type
+#문자형 변수 : character type
 
-#변수 선언
-x = 6 # 스칼라일때는 c()필요없음
-x = c(5) 
-y=(TRUE,FALSE) # 스칼라 외 벡터 등은 반드시 c()필요
-y = c(TRUE,FALSE)
-z = c('사과','망고')
-w = c(1,TRUE,"기모띠")
-v = c(1,FALSE)
+#------------------------------------------
+#1-2. R의 컨테이너 
+# 컨테이너란? : 스칼라 데이터를 여러개 담는 객체
+# R 데이터(컨테이너) 타입 : Vector/Matrix/Array/DF/List
+
+#1-2-1. Vector
+# 1) 벡터의 선언
+# 문법 :  c(벡터 원소)
+x= c(1,10,24,40) 
+y = c('사과','망고')
+y= ('사과','망고') # 벡터 선언시 반드시 c()필요
+z = c(TRUE,FALSE) # 벡터 내의 데이터타입은 모두 동일해야 함
+w = c(1,TRUE,"사과") 
+v = c(1,FALSE) 
+u = c(1,"사과") 
+uu = c(TRUE,"망고") # 데이터타입이 다른 경우 묵시적으로 변환되어 저장
+
+# 1-2-2. Matrix
+# 1) Matrix 선언
+# 문법 : matrix(c(벡터 내용),nrow,ncol,byrow=FALSE,dirnames)
 n = matrix(c(1,2,3,4,5,6),ncol=2)
+nn = matrix((1,2,3,4,5,6),ncol=2) # 반드시 내부에 vector를 써줘야함
+nnn = matrix(c(1,2,3,4,5,6),nrow=2,ncol=2) #nrow/ncol 개수가 맞지 않으면, 알아서 개수 맞게 잘림
+
 m = matrix(c(1,2,3,4,5,6),nrow=2)
-o = 5:10 # :연산자? 의 경우에는 c()없어도 됨
-o
+mm = matrix(c("A","B","C","D","E","F"),nrow=2)
+
+p = matrix(c(1,TRUE,"사과","망고",2,FALSE))
+o = 5:10 # :연산자를 통한 수열선언의 경우에는 c()없어도 됨
 
 
-#rbind,cbind로 matrix 행/열 추가
+#2) rbind,cbind로 matrix 행/열 추가
 rbind(m,c(1,2,3)) #Not In-Place,즉 새로 객체를 생성한다
-cbind(m,c(1,2)) 
+rbind(m,c(1,2)) #기존 matrix의 size와 일치하도록 bind해야 함
 
-#데이터프레임
-df = data.frame(income = c(1,2,3), age = c(10,20,30))
-df
+cbind(m,c(1,2))
+cbind(m,c(1,2,3)) #기존 matrix의 size와 일치하도록 bind해야 함 
 
-#Array 생성
+rbind(m,c("A","B","C")) 
+rbind(mm,c(1,2,3))  # 기존 데이터타입과 다른 것을 넣을 경우 기존데이터 전체에 대해 묵시적 행행변환
+
+
+#1-2-3. 데이터프레임
+# 데이터프레임의 특징 : matrix와 유사하지만, 각 column간의 데이터타입이 다를 수 있다.
+# 1) 선언
+# 문법 : data.frame(열이름=데이터,열이름=데이터)
+D = data.frame(income = c(1,2,3), age = c(10,20,30))
+a1 = c(1,2,3)
+b1 = c(10,20)
+c1 = c("남","야")
+D1 = data.frame(income = a1, age = b1,sex=c1) # 반드시 같은 size로 통일해야 함
+
+#1-2-4. Array
+# 1) 선언
+# 문법 : array(데이터,dim=c(차원 정의))
 array(c(1:20),dim=c(3,4,2)) #행,열,z축 순서
 array(1:20,dim=c(3,4,2))
 array(1:3,dim=1:3)
 
-#List 생성
+#1-2-5. List
+# 타 언어의 dictionary 와 동일한 역할을 하는 컨테이너
+# 1) 선언
+# 문법 : list("키값"="벨류값",...)
 dic = list("name"="김명수",age=28)
-
-#List key 접근
+# 2) 접근
+# 문법 : 리스트명[키] or 리스트명$키
 dic."age" #error! 파이썬처럼 객체 개념이 아니므로 .으로는 찾을 수 없음
 dic["age"] #[]대괄호를 통해서 찾아야 함
 dic$name #R 고유의 $ 를통해 key 접근 가능
 dic$"name" #""로도 가능 
 
-#데이터 테이블
+# 1-2-6. 데이터 테이블
 #개념 : 데이터테이블은 데이터프레임과 유사하지만,
 #처리방식에 따라 데이터프레임보다 조금 빠르다
 
-
-
-#1-2 R 연산자
+#------------------------------------------
+#1-3 R의 연산자
 #R에서 다루는 데이터는 대부분 matrix,array형태이므로
 #기본적으로 선형대수적 연산을 따라간다
 a = 1:10
@@ -63,7 +102,7 @@ a%*%b #행렬곱
 
 5*a #스칼라곱
 
-#1-3 R 기초 함수
+#1-4 R 기초 함수
 #규칙을 가진 수열 vector생성
 rep(1,5)
 rep(2:5,3)
@@ -81,7 +120,6 @@ solve(t(a)%*%a) #singular 매트릭스의 경우 에러 발생
 #기초 연산함수
 sum(a) #합
 log(a) #자연로그값
-
 
 #기초 기술통계값
 mean(a) #평균
@@ -133,13 +171,30 @@ install.packages("psych") #install시 패키지명은 반드시 psych
 library(psych) #import시에는 ""없어도 됨
 library("psych") #""붙여도 사용 가능
 
+#4. 데이터 시각화
+#산점도 그래프
+plot
+plot
+
+#산점도 행렬
+
+#히스토그램
+
+#boxplot
+
 ##2.데이터 마트
 #2 R 데이터 처리
 #2-1 외부 데이터 불러오기
 #1) CSV 불러오기
-
+#read.csv("경로",header=TRUE)
 #2) txt 블러오기
+#read.table("경로",header=TRUE,sep=)
 #3) 엑셀 불러오기
+install.packages("RODBC")
+library("RODBC")
+new = odbcConnectExcel("경로")
+yourdata = sqlFetch(new,"traffic_death")
+yourdata
 #4) 내장 데이터 패키지로부터 불러오기
 data(iris)
 head(iris)
@@ -152,13 +207,9 @@ library("reshape2")
 
 
 
-
 #2-3 SQLD로 SQL문 사용
 
 #2-4 plyr패키지로 데이터프레임화
-
-#2-5 데이터 테이블
-#데이터프레임과 유사하지만 연산속도가 빠르다
 
 #3. 데이터 전처리
 #3-1 결측치 처리
@@ -167,33 +218,5 @@ library("reshape2")
 install.packages("outliers")
 library(outliers)
 
-#4. 데이터 시각화
-#산점도 그래프
-plot
-plot
-
-#산점도 행렬
-
-#히스토그램
-
-#boxplot
 
 ##3.결측값 처리와 이상값 검색
-
-#2장. 통계분석
-##1. 통계학 개론
-
-##2. 기초 통계분석
-
-##3. 다변량분석
-
-##4. 시계열 예측
-
-#3장. 정형 데이터 마이닝
-##1. 데이터 마이닝 개요
-
-##2. 분류분석
-
-##3. 군집분석
-
-##4. 연관분석
