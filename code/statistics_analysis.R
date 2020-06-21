@@ -2,10 +2,19 @@
 #=========2장. R 통계분석==============
 #1. 통계학 개론 - 추가 문서(구글독스 등) 참조
 #기초 통계학 개념과 용어에 대해 설명해주는 부분
+#1-1. 표본 추출
+# 1) 단순 임의추출
+sample(1:10,4)
+sample(1:10,4,replace=TRUE)
+
+# 2) 층화 임의추출
+install.packages("sampling")
+library(sampling)
+x = strata(c("Species"),size= c(3,3,3),method = "srswor",data=iris)
+getdata(iris,x)
 
 #2. R 기초 통계분석
 #2-1 기술통계(Descriptive Statistics)
-data(iris)
 head(iris)
 # 1) 평균값 
 # 문법 : mean(데이터)
@@ -14,22 +23,66 @@ mean(iris["Sepal.Width"]) # 계산 안됨. 이유는는 모르겠음
 
 #2-2 회귀분석
 #2-2-1 단순선형회귀
+# 0) 선형회귀의 4가지 기본가정 https://kkokkilkon.tistory.com/175
+# 1. 선형성
+df = iris[,-5]
+plot(df)
+
+model = lm(Sepal.Length ~., df)
+summary(model)
+
+# Petal변수들의 영향을 제거한 잔차를 추가
+df$Rest.Sepal.Width = df$Sepal.Length - model$coefficients[["Petal.Length"]] * df$Petal.Length - model$coefficients[["Petal.Width"]] * df$Petal.Width
+head(df)
+plot(df)
+
+# Sepal.Width만 독립적으로 선형회귀
+summary(lm(Sepal.Length ~ Sepal.Width, df))
+
+# 2. 독립성
+# 강제 상관성 변수 추가
+dt = iris[, -5]
+dt$Petal.Length1 = dt$Petal.Length + round(rnorm(nrow(dt), 0.05, 0.05), 1)
+dt$Petal.Length2 = dt$Petal.Length + round(rnorm(nrow(dt), 0.05, 0.05), 1)
+dt$Petal.Length3 = dt$Petal.Length + round(rnorm(nrow(dt), 0.05, 0.05), 1)
+
+plot(dt)
+# 다중공선성 존재시의 회귀모델
+mdl = lm(Sepal.Length ~ ., dt)
+summary(mdl)
+
+# 다중공선성 제거(변수선택법 , Stepwise)
+mdl_step <- step(mdl)
+summary(mdl_step)
+
+# 3. 등분산성
+dt = iris[, -5]
+# 강제로 등분산성을 위배하는 변수 ydata 만들기
+set.seed(1)
+dt$ydata = c(round(rnorm(75, 1, 0.3), 1),
+                    round(rnorm(75, 10, 0.3), 1))
+# dt의 분포를 시각적으로 확인하기
+head(dt)
+plot(dt)
+
+
+# 4. 비상관성
+# 5. 정상성
+
 # 1) 데이터 준비
 set.seed(2)
 x = runif(10,0,11) # x는 평균 0, 표준편차 11인인 균등분포로부터 추출
-x
 e = rnorm(10,0,0.2) # e는 평균 0, 표준편차 0.2인 정규분포로부터 10개 추출
-e
 y = 2+3*x + e # y도출
-y
 
 dfrm = data.frame(x,y)
 dfrm
+plot(dfrm)
+
 # 2) 회귀 적용
 model = lm(y~x,data=dfrm)
-
-# 3) 모델 적합성 검증
 summary(model)
+
 
 #2-2-2. 다중선형회귀
 # 1) 데이터 준비
