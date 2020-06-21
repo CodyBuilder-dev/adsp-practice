@@ -94,7 +94,8 @@ e = rnorm(10,0,0.1)
 y = 3+0.1*u+2*v-3*w+e
 
 dfrm = data.frame(y,u,v,w)
-dfrm
+plot(dfrm)
+
 # 2) 회귀 적용
 model2 = lm(y~u+v+w,data=dfrm)
 # 3) 모델 적합성 검증
@@ -102,6 +103,9 @@ summary(model2)
 # -> F통계량 
 # -> p value 또한 유의미함
 # -> R squared값 (결정계수) 가 1로 매우 잘 설명
+
+# 4) 변수를 제거해 가면서 선형성 검증
+dfrm$Rest_u = dfrm$y - model2$coefficient['v']*dfrm$v - model2$coefficient['w']*dfrm$w
 
 #2-2-3 식용 닭 데이터 적용
 # 1) 데이터 준비
