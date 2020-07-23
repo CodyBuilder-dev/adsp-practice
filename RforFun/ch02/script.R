@@ -82,3 +82,30 @@ var(2*X+3*Y)
 x = 1:10
 var(x)
 sd(x)
+
+
+#----------2.5 중심극한정리와 정규분포--------------
+# 균일난수
+# R의 균일난수 생성 알고리즘은 메르센 트위스터
+runif(1)
+runif(10)
+
+# 균일난수 더하기 실험
+X = runif(1000000)
+hist(X,freq=F,col="red",breaks=50) # 빈도수가 아니라 밀도로 표기
+
+X = runif(10000000) + runif(1000000)
+hist(X)
+
+X = runif(10000000) + runif(1000000) + runif(10000000)
+hist(X)
+
+# 정규분포
+# 정규분포 적분값 1 검증
+integrate(function(x){exp(-x**2/2)},-Inf,Inf)
+curve(dnorm(x),add=T)
+
+# 중심극한정리
+# 한줄요약 : iid한 확률변수들의 표본평균과 표본분산은 정규분포를 따른다.
+
+
