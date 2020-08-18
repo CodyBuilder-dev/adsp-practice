@@ -23,5 +23,11 @@ R까기2 : R기본 문법  + 좀더 심화된 통계학 예제
 중 마음에 드는 교재 몇권 사서 뽀개기
 ---
 ## 디렉토리 구조
-data : 데이터 분석을 위해 사용되는 데이터  
-code : 데이터 분석 코드
+각 폴더 : 교재별 실습 내용을 담는 폴더
+ㄴdata : 교재 내 실습을 위한 데이터
+ㄴcode : 교재 내 실습 R script
+---
+## R 레퍼런스
+|내용|링크|
+|---|---|
+|R에 KoNLPY설치 에러가 발생하면?|[링크](http://blog.naver.com/PostView.nhn?blogId=jang0_0yw&logNo=221838447170&redirect=Dlog&widgetTypeCall=true&directAccess=false)|
