@@ -71,8 +71,8 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |데이터 정규성 검정 방법|[샤피오-윌키스]()||
 |회귀분석의 검정 방법|[t-test]()[통계적 유의성 분석:f-test]()[더빈-왓슨]()||
 |붓스트랩 방식||||
-|분해 시계열||||
-|연관분석||||
+|분해 시계열|[링크](https://otexts.com/fppkr/components.html)|||
+|연관분석|[추천을 위한 연관규칙](https://needjarvis.tistory.com/59)|||
 |연관분석과 인과관계||||
 |연관규칙의 향상도,|[링크](https://needjarvis.tistory.com/59)|||
 |교차분석(Cross Tabulation)||||
@@ -98,7 +98,7 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |의사결정나무의 정지규칙|리프를 결정하고 더 내려가지 않도록 하는 규칙|||
 |의사결정나무의 알고리즘|가지를 늘려나가는 알고리즘|||
 |K 평균 군집(ADsP용)||||
-|군집분석 방법론||||
+|군집분석 방법론|[주요 군집화 방법](https://m.blog.naver.com/PostView.nhn?blogId=asus1984&logNo=120065207734&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[주요 군집화 방법](https://finches.tistory.com/42)|||
 |군집 형성 방법론|[병합법]()||
 |군집 내 연결법|단일연결법,완전연결법,평균연결법,와드연결법|
 |계층적 군집분석, 비계층적 군집분석||||
