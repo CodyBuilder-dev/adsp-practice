@@ -23,6 +23,9 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |앤디 필드의 유쾌한 R통계학 | 통계학적 개념들의 R구현 위주|
 
 위의 교재 중 마음에 드는 교재 몇권 사서 뽀개기
+|제목|링크|
+|--|--|
+|개발자가 데이터 분석 전문가 되기|[링크](https://wikidocs.net/48087)|
 
 ### git 필기 방식
 *기존 방식*  
@@ -42,26 +45,41 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 ### 데이터 이해
 |내용|링크|
 |---|---|
-|빅데이터 위험 요소(=위기 요인)과 통제 방안|[책임 훼손]()|
+|빅데이터가 만들어내는 변화/빅데이터의 역할|[링크](https://m.blog.naver.com/PostView.nhn?blogId=jump_penguin&logNo=20206787912&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|빅데이터 위험 요소(=위기 요인)과 통제 방안|[링크](https://needjarvis.tistory.com/473)|
 |SOW(Statement of Work)||
 |데이터매핑||
 |DIKW||
+|데이터 웨어하우스/데이터 마트||
+|데이터 웨어하우스의 4가지 특징(W.H Inmon)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=cat8815&logNo=70036491522&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|데이터 사이언티스트의 필요 역량|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/20/ADsP-6.html)|
 
 ### 데이터 분석 기획
 |내용|링크|
 |---|---|
+|분석 주제 유형|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/21/ADsP-8.html)|
+|비즈니스 모델 캔버스|[링크](https://m.blog.naver.com/mayanie/220822513011)|
 |데이터 문제 탐색의 도구||
 |상향식/하향식 접근||
-|과제 우선순위 결정||
+|빅데이터 분석 계층적 프로세스 모델|[링크](https://needjarvis.tistory.com/513)|
+|분석 마스터플랜(과제 우선순위 결정)|[링크](https://kim-mj.tistory.com/79)|
+|비즈니스 모델 기반 분석과제 도출|[링크](https://dlsdn73.tistory.com/1133)|
+|거시관점 메가 트렌드 STEEP|[STEEP의 개념](https://www.slideshare.net/kimseungha/steep-11363001)<br>[분석 예시](http://future.fki.or.kr/Common/Download.aspx?id=7667532c-0123-4e1e-8373-e4133f6dab3b)|
 |데이터분석 방법론|[정리]()<br>[KDD(Knowledge Discover in Database)]()<br>[CRISP-DM](https://blog.naver.com/iwodus/220939287519)|
 |데이터 분석 조직구조|집중구조/기능구조/분산구조/복합구조|
-|정형-비정형-반정형||
-|분석 프로젝트 관리||
+|정형-비정형-반정형 데이터||
+|분석 프로젝트 관리포인트|[링크](https://needjarvis.tistory.com/533)|
 |포트폴리오 사분면 분석|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)|
-|빅데이터 거버넌스||
+|빅데이터 거버넌스(분석수준 진단)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=liberty264&logNo=221012000376&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|데이터 분석 프로세스 3가지(KDD,SEMMA,CRISP-DM|[링크](http://blog.naver.com/PostView.nhn?blogId=iwodus&logNo=220679436727&parentCategoryNo=&categoryNo=30&viewDate=&isShowPopularPosts=true&from=search)|
+|데이터 분석 프로세스별 입력/출력(산출물)|[입력,출력 쪽을 보면 됨](https://needjarvis.tistory.com/513)|
+|분석 과제 관리 5가지 영역|[링크](https://post.naver.com/viewer/postView.nhn?volumeNo=27649869&memberNo=22344892)|
+|데이터 분석과제 우선수위 사분면|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[우선순위 조정](https://m.blog.naver.com/PostView.nhn?blogId=jdhpuppy&logNo=221343786927&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+
 ### 통계
 |개념|설명|링크|해결가능 문제|
 |---|---|---|---|
+|유형분석||||
 |자료의 척도|명목,구간,등간,||||
 |회귀모델 변수 선택법||||
 |Lasso 회귀분석||||
@@ -91,6 +109,7 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |데이터마이닝의 단계||
 |Bias-Variance Trade off||
 |회귀분석의 결정계수||
+
 ### 머신러닝
 |개념|설명|링크|해결가능 문제|
 |---|---|---|---|
@@ -105,6 +124,7 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |코호넨 네트워크 군집||||
 |SOM 프로세스|||
 |결측값 처리|[imputation]|||
+
 ### R
 |내용|링크|
 |---|---|
