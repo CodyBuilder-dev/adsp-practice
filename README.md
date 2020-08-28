@@ -72,79 +72,76 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |분석 프로젝트 관리포인트|[링크](https://needjarvis.tistory.com/533)<br>[링크](https://post.naver.com/viewer/postView.nhn?volumeNo=27649869&memberNo=22344892)|
 
 ### 통계
-|개념|설명|링크|해결가능 문제|
+|개념|링크|설명|해결가능 문제|
 |---|---|---|---|
-|유형분석||||
-|자료의 척도|명목,구간,등간,||||
-|회귀모델 변수 선택법||||
-|Lasso 회귀분석||||
-|Lidge 회귀분석||||
-|통계학적 거리의 정의(유클리드,맨해튼,마할라노비스,민코프스키)|||
-|등분산 검정|||t테스트 전에, 두 표본이 동분산인지 검정|
-|데이터 정규성 검정 방법|[샤피오-윌키스]()||
-|paired t 검정||
+|자료의 척도(명목,서열,등간,비율)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=sgjjojo&logNo=221270160250&proxyReferer=https:%2F%2Fwww.google.com%2F)|||
+|회귀모델 변수 선택법(전진,후진)|[링크](https://rpago.tistory.com/15)|||
+|Lasso/Ridge 회귀분석|[링크](https://rk1993.tistory.com/entry/Ridge-regression%EC%99%80-Lasso-regression-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)|||
+|변수 선택 기준(Cp,AIC,BIC)||
 |회귀분석의 검정 방법|[t-test]()[통계적 유의성 분석:f-test]()||
+|paired t 검정||
+|회귀분석에서 상관계수와 결정계수의 뜻과 수식||
+|상관계수|[피어슨]()[스피어만]()|||
+|켄달과 스피어만의 순위상관계수||
+|회귀분석의 p value 해석||||
+|다중회귀 잔차의 해석||
+|로지스틱 회귀분석의 odds||
+|교호작용|[링크](https://dermabae.tistory.com/189)|두 독립변수가 상호작용을 일으켜 새로운 영향을 일으키는 것|||
+|F분포의 용도와 카이스퀘어 분포의 용도|||
+|등분산 검정|||t테스트 전에, 두 표본이 동분산인지 검정|
+|분산의 동일성과 F 분포||
+|데이터 정규성 검정 방법|[샤피오-윌키스]()||
 |자기상관의 존재성 여부 검증|[더빈-왓슨]()||
 |비모수 분포 간의 차이 검정|[크루스칼-왈리스 검증]()|||
 |카이제곱검정|[]()|
-|회귀분석에서 상관계수와 결정계수의 뜻과 수식||
-|분산의 동일성과 F 분포||
 |붓스트랩 방식||||
-|분해 시계열|[링크](https://otexts.com/fppkr/components.html)|||
 |연관분석|[추천을 위한 연관규칙](https://needjarvis.tistory.com/59)|||
 |연관분석과 인과관계||||
 |연관규칙의 지지도,신뢰도,향상도|[링크](https://needjarvis.tistory.com/59)|||
 |교차분석(Cross Tabulation)||||
 |산포의 척도||||
-|회귀분석의 p value 해석||||
-|상관계수|[피어슨]()[스피어만]()|||
-|전진선택법/후진선택법|||
-|변수 선택 기준(Cp,AIC,BIC)||
-|등간척도||
+|분해 시계열|[링크](https://otexts.com/fppkr/components.html)|||
 |비모수 검정의 종류|[]()|
-|다중회귀 잔차의 해석||
 |혼동행렬(=오분류표) 해석||
 |사회연결망 분석||
 |ROC 분석||
 |kappa||
 |데이터마이닝의 단계||
 |Bias-Variance Trade off||
-|회귀분석의 결정계수||
-|켄달과 스피어만의 순위상관계수||
 |주성분분석(PCA)의 방법과 해석||
 |PCA에서 잃은 정보량||
 |분할표의 용도|두 명목변수 간의 연관성 확인|
-|F분포의 용도와 카이스퀘어 분포의 용도|||
-|로지스틱 회귀분석의 odds||
-|교호효과||
 
 ### 머신러닝
 |개념|설명|링크|해결가능 문제|
 |---|---|---|---|
-|의사결정나무 용어|[순수도]()|||
-|의사결정나무의 정지규칙|리프를 결정하고 더 내려가지 않도록 하는 규칙|||
-|의사결정나무의 알고리즘|가지를 늘려나가는 알고리즘|||
-|트리모델 불순도와 순수도||
-|의사결정나무의 목표변수에 따른 분리기준|||
-|K 평균 군집(ADsP용)||||
+|결측값 처리|[imputation](https://m.blog.naver.com/hancury/220396495672)|||
+|의사결정나무 정리|[링크](https://dreamlog.tistory.com/576)<br>[링크](https://ratsgo.github.io/machine%20learning/2017/03/26/tree/)|
+|의사결정나무의 정지규칙||리프를 결정하고 더 내려가지 않도록 하는 규칙||
+|의사결정나무의 알고리즘||가지를 늘려나가는 알고리즘||
+|의사결정나무의 목표변수에 따른 분리기준 지표|[링크](https://m.blog.naver.com/PostView.nhn?blogId=pmw9440&logNo=221591538223&proxyReferer=https:%2F%2Fwww.google.com%2F)||
 |군집분석 방법론|[주요 군집화 방법](https://m.blog.naver.com/PostView.nhn?blogId=asus1984&logNo=120065207734&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[주요 군집화 방법](https://finches.tistory.com/42)|||
 |군집 형성 방법론|[병합법]()||
-|군집 내 연결법|단일연결법,완전연결법,평균연결법,와드연결법|
-|계층적 군집분석, 비계층적 군집분석||||
+|통계학적 거리의 정의(유클리드,맨해튼,마할라노비스,민코프스키)|||
 |상관관계가 존재할 경우 마할라노비스 거리||
 |군집의 데이터가 범주형일 경우 자카드 거리|||
+|군집 내 연결법|단일연결법,완전연결법,평균연결법,와드연결법|
+|계층적 군집분석, 비계층적 군집분석||||
+|K 평균 군집(ADsP용)||||
 |코호넨 네트워크 군집||||
+|혼합분포군집의 의미와 사용처||
+|계층적 군집과 비계층적 군집 비교|||
 |SOM 프로세스|||
-|결측값 처리|[imputation]|||
-|SVM의 최적 파라미터 선정 방법|그런건 없다!<br> [교차검증]() <br>[파라미터 튜닝]()|
+|SVM의 최적 파라미터 선정 방법|[교차검증]() <br>[파라미터 튜닝]()|결국 궁극적인 최적파라미터 선정법은 없다!|||
 
 ### R
-|내용|링크|
-|---|---|
+|내용|링크|설명|
+|---|---|---|
+|R 패키지별 역할|[결측값 관련 패키지]()<br>|
+|양적자료/질적자료 그래프||
+|R에서 대괄호 2개 인덱싱||
 |table()과 prop.table()||
 |cut()||
-|양적자료/질적자료 그래프||
-|R 패키지별 역할|[결측값 관련 패키지]()<br>|
 |Data.table과 Data.frame||
 |apply vs sapply vs lapply vs colmeans||
 |melt||
@@ -165,5 +162,13 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |chisq.test||
 |symnum()||
 |complete.case 함수||
-|R에서 대괄호 2개 인덱싱||
+|agnes함수||
+|CreateDataPartition함수|[링크](https://rdrr.io/rforge/caret/man/createDataPartition.html)|데이터를 분할해주는 함수(분할된 인덱스를 반환함)|
+|Scale함수|[링크](https://thebook.io/006723/ch09/02/01/)|데이터 정규화 함수(centering,scaling)|
+|Nbclust 함수|[링크](https://www.rdocumentation.org/packages/NbClust/versions/3.0/topics/NbClust)|최적의 클러스터 개수를 찾아주는 함수|
+|rpart패키지 - rpart함수|[예시](https://m.blog.naver.com/PostView.nhn?blogId=pmw9440&logNo=221591538223&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[예시](https://www.crocus.co.kr/1283)|R 의사결정 나무 패키지|
+
+### R 개발환경
+|내용|링크|
+|---|---|
 |R에 KoNLPY설치 에러가 발생하면?|[링크](http://blog.naver.com/PostView.nhn?blogId=jang0_0yw&logNo=221838447170&redirect=Dlog&widgetTypeCall=true&directAccess=false)|
