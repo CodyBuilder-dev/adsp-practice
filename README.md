@@ -45,36 +45,31 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 ### 데이터 이해
 |내용|링크|
 |---|---|
+|데이터 사이언티스트의 필요 역량|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/20/ADsP-6.html)|
+|DIKW 피라미드의 개념|[링크](https://squirrel-bigdata.tistory.com/25)|
 |빅데이터가 만들어내는 변화/빅데이터의 역할|[링크](https://m.blog.naver.com/PostView.nhn?blogId=jump_penguin&logNo=20206787912&proxyReferer=https:%2F%2Fwww.google.com%2F)|
 |빅데이터 위험 요소(=위기 요인)과 통제 방안|[링크](https://needjarvis.tistory.com/473)|
-|SOW(Statement of Work)||
-|데이터매핑||
-|DIKW||
-|데이터 웨어하우스/데이터 마트||
+|정형-비정형-반정형 데이터|[링크](https://needjarvis.tistory.com/502)|
+|데이터 웨어하우스/데이터 마트|[정의](https://middleware.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9B%A8%EC%96%B4%ED%95%98%EC%9A%B0%EC%8A%A4Data-Warehouse-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%ED%8A%B8Data-Mart)<br>|
 |데이터 웨어하우스의 4가지 특징(W.H Inmon)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=cat8815&logNo=70036491522&proxyReferer=https:%2F%2Fwww.google.com%2F)|
-|데이터 사이언티스트의 필요 역량|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/20/ADsP-6.html)|
 
 ### 데이터 분석 기획
 |내용|링크|
 |---|---|
-|분석 주제 유형|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/21/ADsP-8.html)|
-|비즈니스 모델 캔버스|[링크](https://m.blog.naver.com/mayanie/220822513011)|
-|데이터 문제 탐색의 도구||
-|상향식/하향식 접근||
-|빅데이터 분석 계층적 프로세스 모델|[링크](https://needjarvis.tistory.com/513)|
-|분석 마스터플랜(과제 우선순위 결정)|[링크](https://kim-mj.tistory.com/79)|
-|비즈니스 모델 기반 분석과제 도출|[링크](https://dlsdn73.tistory.com/1133)|
+|분석기획의 방향성 도출, 주제유형|[링크](https://devyurim.github.io/data%20science/adsp/2018/08/21/ADsP-8.html)|
+|분석과제 발굴을 위한 상향식/하향식 접근|[링크](https://plannoa.github.io/certificate/2019/03/17/ADsP-3-1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EA%B8%B0%ED%9A%8D%EC%9D%98-%EC%9D%B4%ED%95%B4-3/)|
+|하향식 접근법 - 비즈니스 모델 캔버스|[BM캔버스의 정의](https://m.blog.naver.com/mayanie/220822513011)<br>[비즈니스 모델 기반 분석과제 도출](https://dlsdn73.tistory.com/1133)|
 |거시관점 메가 트렌드 STEEP|[STEEP의 개념](https://www.slideshare.net/kimseungha/steep-11363001)<br>[분석 예시](http://future.fki.or.kr/Common/Download.aspx?id=7667532c-0123-4e1e-8373-e4133f6dab3b)|
-|데이터분석 방법론|[정리]()<br>[KDD(Knowledge Discover in Database)]()<br>[CRISP-DM](https://blog.naver.com/iwodus/220939287519)|
-|데이터 분석 조직구조|집중구조/기능구조/분산구조/복합구조|
-|정형-비정형-반정형 데이터||
-|분석 프로젝트 관리포인트|[링크](https://needjarvis.tistory.com/533)|
-|포트폴리오 사분면 분석|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)|
-|빅데이터 거버넌스(분석수준 진단)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=liberty264&logNo=221012000376&proxyReferer=https:%2F%2Fwww.google.com%2F)|
-|데이터 분석 프로세스 3가지(KDD,SEMMA,CRISP-DM|[링크](http://blog.naver.com/PostView.nhn?blogId=iwodus&logNo=220679436727&parentCategoryNo=&categoryNo=30&viewDate=&isShowPopularPosts=true&from=search)|
+|데이터분석 프로세스 방법론|[3가지 총정리](http://blog.naver.com/PostView.nhn?blogId=iwodus&logNo=220679436727&parentCategoryNo=&categoryNo=30&viewDate=&isShowPopularPosts=true&from=search)<br>[KDD(Knowledge Discover in Database)](https://needjarvis.tistory.com/508)<br>[CRISP-DM](https://blog.naver.com/iwodus/220939287519)<br>[CRISP-DM](https://needjarvis.tistory.com/512?category=850659)|
+|빅데이터 분석 계층적 프로세스 모델|[링크](https://needjarvis.tistory.com/513)|
+|SOW(Statement of Work, 작업 기술서)|[사전적인 의미](https://sgpassion.tistory.com/7)<br>분석의 범주를 정의해 둔 것<br>빅데이터 분석 방법론 5단계 중 1단계 분석 기획에서 산출됨|
+|데이터매핑|빅데이터 분석 방법론 5단계 중 2단계 데이터 준비,데이터 스토어 설계에서 산출됨|
 |데이터 분석 프로세스별 입력/출력(산출물)|[입력,출력 쪽을 보면 됨](https://needjarvis.tistory.com/513)|
-|분석 과제 관리 5가지 영역|[링크](https://post.naver.com/viewer/postView.nhn?volumeNo=27649869&memberNo=22344892)|
-|데이터 분석과제 우선수위 사분면|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[우선순위 조정](https://m.blog.naver.com/PostView.nhn?blogId=jdhpuppy&logNo=221343786927&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|분석 마스터플랜/거버넌스|[총정리](https://m.blog.naver.com/PostView.nhn?blogId=jdhpuppy&logNo=221343786927&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[링크](https://kim-mj.tistory.com/79)|
+|분석 마스터플랜 - 포트폴리오 사분면 분석|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|분석 마스터플랜 - 데이터 분석과제 우선순위 사분면|[링크](https://m.blog.naver.com/PostView.nhn?blogId=nknn2004&logNo=221712885140&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[우선순위 조정](https://m.blog.naver.com/PostView.nhn?blogId=jdhpuppy&logNo=221343786927&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|분석 거버넌스(분석수준 진단)|[링크](https://m.blog.naver.com/PostView.nhn?blogId=liberty264&logNo=221012000376&proxyReferer=https:%2F%2Fwww.google.com%2F)|
+|분석 프로젝트 관리포인트|[링크](https://needjarvis.tistory.com/533)<br>[링크](https://post.naver.com/viewer/postView.nhn?volumeNo=27649869&memberNo=22344892)|
 
 ### 통계
 |개념|설명|링크|해결가능 문제|
@@ -87,12 +82,18 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |통계학적 거리의 정의(유클리드,맨해튼,마할라노비스,민코프스키)|||
 |등분산 검정|||t테스트 전에, 두 표본이 동분산인지 검정|
 |데이터 정규성 검정 방법|[샤피오-윌키스]()||
-|회귀분석의 검정 방법|[t-test]()[통계적 유의성 분석:f-test]()[더빈-왓슨]()||
+|paired t 검정||
+|회귀분석의 검정 방법|[t-test]()[통계적 유의성 분석:f-test]()||
+|자기상관의 존재성 여부 검증|[더빈-왓슨]()||
+|비모수 분포 간의 차이 검정|[크루스칼-왈리스 검증]()|||
+|카이제곱검정|[]()|
+|회귀분석에서 상관계수와 결정계수의 뜻과 수식||
+|분산의 동일성과 F 분포||
 |붓스트랩 방식||||
 |분해 시계열|[링크](https://otexts.com/fppkr/components.html)|||
 |연관분석|[추천을 위한 연관규칙](https://needjarvis.tistory.com/59)|||
 |연관분석과 인과관계||||
-|연관규칙의 향상도,|[링크](https://needjarvis.tistory.com/59)|||
+|연관규칙의 지지도,신뢰도,향상도|[링크](https://needjarvis.tistory.com/59)|||
 |교차분석(Cross Tabulation)||||
 |산포의 척도||||
 |회귀분석의 p value 해석||||
@@ -109,6 +110,13 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |데이터마이닝의 단계||
 |Bias-Variance Trade off||
 |회귀분석의 결정계수||
+|켄달과 스피어만의 순위상관계수||
+|주성분분석(PCA)의 방법과 해석||
+|PCA에서 잃은 정보량||
+|분할표의 용도|두 명목변수 간의 연관성 확인|
+|F분포의 용도와 카이스퀘어 분포의 용도|||
+|로지스틱 회귀분석의 odds||
+|교호효과||
 
 ### 머신러닝
 |개념|설명|링크|해결가능 문제|
@@ -116,18 +124,32 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |의사결정나무 용어|[순수도]()|||
 |의사결정나무의 정지규칙|리프를 결정하고 더 내려가지 않도록 하는 규칙|||
 |의사결정나무의 알고리즘|가지를 늘려나가는 알고리즘|||
+|트리모델 불순도와 순수도||
+|의사결정나무의 목표변수에 따른 분리기준|||
 |K 평균 군집(ADsP용)||||
 |군집분석 방법론|[주요 군집화 방법](https://m.blog.naver.com/PostView.nhn?blogId=asus1984&logNo=120065207734&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[주요 군집화 방법](https://finches.tistory.com/42)|||
 |군집 형성 방법론|[병합법]()||
 |군집 내 연결법|단일연결법,완전연결법,평균연결법,와드연결법|
 |계층적 군집분석, 비계층적 군집분석||||
+|상관관계가 존재할 경우 마할라노비스 거리||
+|군집의 데이터가 범주형일 경우 자카드 거리|||
 |코호넨 네트워크 군집||||
 |SOM 프로세스|||
 |결측값 처리|[imputation]|||
+|SVM의 최적 파라미터 선정 방법|그런건 없다!<br> [교차검증]() <br>[파라미터 튜닝]()|
 
 ### R
 |내용|링크|
 |---|---|
+|table()과 prop.table()||
+|cut()||
+|양적자료/질적자료 그래프||
+|R 패키지별 역할|[결측값 관련 패키지]()<br>|
+|Data.table과 Data.frame||
+|apply vs sapply vs lapply vs colmeans||
+|melt||
+|rm, ls함수||
+|dcast함수||
 |procomp함수||
 |anova함수||
 |dist함수||
@@ -139,4 +161,9 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |par함수||
 |t.test함수||
 |sample 함수||
+|xtabs함수||
+|chisq.test||
+|symnum()||
+|complete.case 함수||
+|R에서 대괄호 2개 인덱싱||
 |R에 KoNLPY설치 에러가 발생하면?|[링크](http://blog.naver.com/PostView.nhn?blogId=jang0_0yw&logNo=221838447170&redirect=Dlog&widgetTypeCall=true&directAccess=false)|
