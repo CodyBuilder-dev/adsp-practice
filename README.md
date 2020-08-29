@@ -137,16 +137,15 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 ### R
 |내용|링크|설명|
 |---|---|---|
-|R 패키지별 역할|[결측값 관련 패키지]()<br>|
-|양적자료/질적자료 그래프||
-|R에서 대괄호 2개 인덱싱||
-|table()과 prop.table()||
-|cut()||
-|Data.table과 Data.frame||
+|R 패키지별 역할|[결측값 관련 패키지 naniar](https://velog.io/@suzin/R-데이터-탐색-3.-Missing-Value결측치-NA)<br>|
+|양적자료/질적자료|[질적자료/양적자료 그래프](https://m.blog.naver.com/roochicok/221648140099)|
+|R에서 대괄호 2개 인덱싱|[반환값은 벡터](https://www.it-swarm.dev/ko/r/목록-또는-데이터-프레임-요소에-액세스하기위한-대괄호-와-이중-대괄호-의-차이점/967392444/amp/)|
+|table()과 prop.table()||prop.table은 데이터의 상대도수 반환|
+|cut()||연속형 변수를 명목형 변수로 변환하기 (점수->수우미양가)|
+|Data.table과 Data.frame|[ADsP식 설명](https://m.blog.naver.com/PostView.nhn?blogId=liberty264&logNo=221014957263&proxyReferer=https:%2F%2Fwww.google.com%2F)<br>[R 스타일 설명](https://using.tistory.com/m/81)||
 |apply vs sapply vs lapply vs colmeans||
-|melt||
+|melt함수와 cast함수|||
 |rm, ls함수||
-|dcast함수||
 |procomp함수||
 |anova함수||
 |dist함수||
@@ -162,7 +161,7 @@ ADsP 관련 시험에서 요구되는 정도의 문법 수준
 |chisq.test||
 |symnum()||
 |complete.case 함수||
-|agnes함수||
+|cluster 패키지 - agnes함수||병합적 방법으로 계층적 클러스터링 수행 함수|
 |CreateDataPartition함수|[링크](https://rdrr.io/rforge/caret/man/createDataPartition.html)|데이터를 분할해주는 함수(분할된 인덱스를 반환함)|
 |Scale함수|[링크](https://thebook.io/006723/ch09/02/01/)|데이터 정규화 함수(centering,scaling)|
 |Nbclust 함수|[링크](https://www.rdocumentation.org/packages/NbClust/versions/3.0/topics/NbClust)|최적의 클러스터 개수를 찾아주는 함수|
